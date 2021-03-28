@@ -19,7 +19,7 @@ class ExpressServer {
     }
 
     _middlewares(){
-        this.app.use(express.json);
+        this.app.use(express.json());
         this.app.use(morgan('tiny'));
     }
 
